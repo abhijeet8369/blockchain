@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f1f5f9;
+
+    min-height: 100vh;
+
+    padding: 30px;
+
+}
+
+.container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}
+
+h1 {
+
+    text-align: center;
+
+    color: #1e293b;
+
+    margin-bottom: 10px;
+
+}
+
+.subtitle {
+
+    text-align: center;
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+
+}
+
+.wallet-section {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+button:hover {
+
+    background: #1d4ed8;
+
+}
+
+button:disabled {
+
+    background: #94a3b8;
+
+    cursor: not-allowed;
+
+}
+
+#walletAddress {
+
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    color: #334155;
+
+    overflow-wrap: anywhere;
+
+}
+
+#networkStatus {
+
+    margin-top: 8px;
+
+    color: #64748b;
+
+}
+
+#accountInfo {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #334155;
+    overflow-wrap: anywhere;
+}
+
+#networkInfo {
+    margin-top: 8px;
+    color: #64748b;
+}
+
+h2 {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: #1e293b;
+
+}
+
+.candidate-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+
+}
+
+.candidate-card {
+
+    padding: 25px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+}
+
+.candidate-card h3 {
+
+    color: #1e293b;
+
+    margin-bottom: 15px;
+
+}
+
+.vote-count {
+
+    font-size: 18px;
+
+    color: #2563eb;
+
+    margin-bottom: 20px;
+
+}
+
+#statusMessage {
+
+    text-align: center;
+
+    margin: 15px 0;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    overflow-wrap: anywhere;
+
+    font-size: 14px;
+
+}
+
+.success {
+
+    color: #166534;
+
+    background: #dcfce7;
+
+}
+
+.error {
+
+    color: #991b1b;
+
+    background: #fee2e2;
+
+}
+
+.status-box,
+#statusMessage {
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}
+
+.status-success,
+.success {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.status-error,
+.error {
+    color: #991b1b;
+    background: #fee2e2;
+}
+
+.candidate-name {
+    color: #1e293b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.candidate-votes {
+    color: #2563eb;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #64748b;
+}
+
+@media(max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+}

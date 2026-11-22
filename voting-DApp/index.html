@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Voting DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Decentralized Voting System</h1>
+        <p class="subtitle">A Blockchain-Based Voting Application</p>
+
+        <div class="wallet-section">
+            <button id="connectBtn">Connect MetaMask</button>
+            <button id="refreshBtn" disabled>Refresh Results</button>
+
+            <p id="accountInfo">Account: Not connected</p>
+            <p id="networkInfo">Network: Not connected</p>
+        </div>
+
+        <div id="statusBox" class="status-box">Connect your wallet to begin.</div>
+
+        <h2>Available Candidates</h2>
+        <div id="candidatesContainer" class="candidate-list">
+            <p class="info-text">Connect your wallet to load candidates.</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.5/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
